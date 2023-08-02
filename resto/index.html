@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='global-wrapper' id="global-wrapper">
+        <header>
+            <h3>Jimmy’s Diner</h3>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <div id="items"></div>
+        <section id="total-global">
+            <p class="total-head"><strong>Your Order</strong></p>
+            <div id="order-summary">
+            </div>
+            <div id="total-price-section">
+            </div>
+
+        </section>
+        <div class="modal" id="modal">
+            <div class="container-btn">
+                <button class="close-btn" id="close-btn">X</button>
+            </div>
+            <div class="inner-modal">
+                <p>Enter Card details</p>
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Enter your name">
+                <label for="card"></label>
+                <input type="text" id="card-num" name="card-num" placeholder="Enter card number">
+                <label for="cvv"></label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+                <button class="pay-btn" id="pay-btn">Pay</button>
+            </div>
+
+        </div>
+    </div>
+    <script type='module' src="index.js"></script>
+</body>
+
+</html>
